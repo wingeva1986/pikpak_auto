@@ -5,3 +5,4 @@ requests
 uuid
 asyncio
 aiohttp
+rich

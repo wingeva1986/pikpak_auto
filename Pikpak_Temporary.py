@@ -579,7 +579,8 @@ async def main():
         xid = str(uuid.uuid4()).replace("-", "")
         mail = await get_mail()
         Init = await init(xid, mail)
-        ID = random.randint(1, 11)
+        # ID = random.randint(1, 11)
+        ID = 3
 
         # 滑块验证
         while True:

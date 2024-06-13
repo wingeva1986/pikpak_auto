@@ -509,13 +509,13 @@ async def init2(xid, access_token, sub, sign, t):
 
 
 async def activation_code(access_token, captcha, xid, in_code):
-    url = 'https://api-drive.mypikpak.com/vip/v1/order/activation-code'
+    url = 'https://cors.hiker.eu.org/api-drive.mypikpak.com/vip/v1/order/activation-code'
     body = {
         "activation_code": in_code,
         "page": "invite"
     }
     headers = {
-        'host': 'api-drive.mypikpak.com',
+        'host': 'cors.hiker.eu.org',
         'content-length': str(len(json.dumps(body))),
         'accept': '*/*',
         'accept-encoding': 'gzip, deflate, br',

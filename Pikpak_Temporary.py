@@ -321,7 +321,7 @@ async def verify(xid, verification_id, code):
 
 
 async def signup(xid, mail, code, verification_token):
-    url = 'https://cors.hiker.eu.org/user.mypikpak.com/v1/auth/signup'
+    url = 'https://user.mypikpak.com/v1/auth/signup'
     body = {
         "email": mail,
         "verification_code": code,
@@ -419,7 +419,7 @@ async def init1(xid, access_token, sub, sign, t):
 
 
 async def invite(access_token, captcha_token, xid):
-    url = 'https://cors.hiker.eu.org/api-drive.mypikpak.com/vip/v1/activity/invite'
+    url = 'https://api-drive.mypikpak.com/vip/v1/activity/invite'
     body = {
         "apk_extra": {
             "invite_code": ""
@@ -509,7 +509,7 @@ async def init2(xid, access_token, sub, sign, t):
 
 
 async def activation_code(access_token, captcha, xid, in_code):
-    url = 'https://cors.hiker.eu.org/api-drive.mypikpak.com/vip/v1/order/activation-code'
+    url = 'https://api-drive.mypikpak.com/vip/v1/order/activation-code'
     body = {
         "activation_code": in_code,
         "page": "invite"

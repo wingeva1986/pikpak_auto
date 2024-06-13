@@ -133,7 +133,7 @@ async def get_code(mail, max_retries=10, delay=1):
 
 
 async def init(xid, mail):
-    url = 'https://cors.hiker.eu.org/user.mypikpak.com/v1/shield/captcha/init'
+    url = 'https://user.mypikpak.com/v1/shield/captcha/init'
     body = {
         "client_id": "YvtoWO6GNHiuCl7x",
         "action": "POST:/v1/auth/verification",
@@ -367,7 +367,7 @@ async def signup(xid, mail, code, verification_token):
 
 
 async def init1(xid, access_token, sub, sign, t):
-    url = 'https://cors.hiker.eu.org/user.mypikpak.com/v1/shield/captcha/init'
+    url = 'https://user.mypikpak.com/v1/shield/captcha/init'
     body = {
         "client_id": "YvtoWO6GNHiuCl7x",
         "action": "POST:/vip/v1/activity/invite",
@@ -457,7 +457,7 @@ async def invite(access_token, captcha_token, xid):
 
 
 async def init2(xid, access_token, sub, sign, t):
-    url = 'https://cors.hiker.eu.org/user.mypikpak.com/v1/shield/captcha/init'
+    url = 'https://user.mypikpak.com/v1/shield/captcha/init'
     body = {
         "client_id": "YvtoWO6GNHiuCl7x",
         "action": "POST:/vip/v1/order/activation-code",

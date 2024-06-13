@@ -230,7 +230,7 @@ async def get_new_token(result, xid, captcha):
 
 
 async def verification(captcha_token, xid, mail):
-    url = 'https://cors.hiker.eu.org/user.mypikpak.com/v1/auth/verification'
+    url = 'https://user.mypikpak.com/v1/auth/verification'
     body = {
         "email": mail,
         "target": "ANY",
@@ -277,7 +277,7 @@ async def verification(captcha_token, xid, mail):
 
 
 async def verify(xid, verification_id, code):
-    url = 'https://cors.hiker.eu.org/user.mypikpak.com/v1/auth/verification/verify'
+    url = 'https://user.mypikpak.com/v1/auth/verification/verify'
     body = {
         "verification_id": verification_id,
         "verification_code": code,

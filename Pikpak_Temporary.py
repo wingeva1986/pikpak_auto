@@ -133,7 +133,7 @@ async def get_code(mail, max_retries=10, delay=1):
 
 
 async def init(xid, mail):
-    url = 'https://user.mypikpak.com/v1/shield/captcha/init'
+    url = 'https://cors.hiker.eu.org/user.mypikpak.com/v1/shield/captcha/init'
     body = {
         "client_id": "YvtoWO6GNHiuCl7x",
         "action": "POST:/v1/auth/verification",
@@ -230,7 +230,7 @@ async def get_new_token(result, xid, captcha):
 
 
 async def verification(captcha_token, xid, mail):
-    url = 'https://user.mypikpak.com/v1/auth/verification'
+    url = 'https://cors.hiker.eu.org/user.mypikpak.com/v1/auth/verification'
     body = {
         "email": mail,
         "target": "ANY",
@@ -277,7 +277,7 @@ async def verification(captcha_token, xid, mail):
 
 
 async def verify(xid, verification_id, code):
-    url = 'https://user.mypikpak.com/v1/auth/verification/verify'
+    url = 'https://cors.hiker.eu.org/user.mypikpak.com/v1/auth/verification/verify'
     body = {
         "verification_id": verification_id,
         "verification_code": code,
@@ -321,7 +321,7 @@ async def verify(xid, verification_id, code):
 
 
 async def signup(xid, mail, code, verification_token):
-    url = 'https://user.mypikpak.com/v1/auth/signup'
+    url = 'https://cors.hiker.eu.org/user.mypikpak.com/v1/auth/signup'
     body = {
         "email": mail,
         "verification_code": code,
@@ -367,7 +367,7 @@ async def signup(xid, mail, code, verification_token):
 
 
 async def init1(xid, access_token, sub, sign, t):
-    url = 'https://user.mypikpak.com/v1/shield/captcha/init'
+    url = 'https://cors.hiker.eu.org/user.mypikpak.com/v1/shield/captcha/init'
     body = {
         "client_id": "YvtoWO6GNHiuCl7x",
         "action": "POST:/vip/v1/activity/invite",
@@ -419,7 +419,7 @@ async def init1(xid, access_token, sub, sign, t):
 
 
 async def invite(access_token, captcha_token, xid):
-    url = 'https://api-drive.mypikpak.com/vip/v1/activity/invite'
+    url = 'https://cors.hiker.eu.org/api-drive.mypikpak.com/vip/v1/activity/invite'
     body = {
         "apk_extra": {
             "invite_code": ""
@@ -457,7 +457,7 @@ async def invite(access_token, captcha_token, xid):
 
 
 async def init2(xid, access_token, sub, sign, t):
-    url = 'https://user.mypikpak.com/v1/shield/captcha/init'
+    url = 'https://cors.hiker.eu.org/user.mypikpak.com/v1/shield/captcha/init'
     body = {
         "client_id": "YvtoWO6GNHiuCl7x",
         "action": "POST:/vip/v1/order/activation-code",
@@ -509,7 +509,7 @@ async def init2(xid, access_token, sub, sign, t):
 
 
 async def activation_code(access_token, captcha, xid, in_code):
-    url = 'https://api-drive.mypikpak.com/vip/v1/order/activation-code'
+    url = 'https://cors.hiker.eu.org/api-drive.mypikpak.com/vip/v1/order/activation-code'
     body = {
         "activation_code": in_code,
         "page": "invite"

@@ -6,3 +6,4 @@ uuid
 asyncio
 aiohttp
 rich
+brotli

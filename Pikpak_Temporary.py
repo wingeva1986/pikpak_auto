@@ -6,6 +6,7 @@ import time
 import asyncio
 import aiohttp
 import uuid
+import brotli
 
 import yaml
 from rich import print_json
